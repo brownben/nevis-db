@@ -47,8 +47,8 @@
     "build-styles": "stylus ./styles -c -m"
   },
   "build": {
-    "appId": "Nevis",
-    "productName": "Nevis",
+    "appId": "NevisDB",
+    "productName": "Nevis Database",
     "win": {
       "target": "nsis",
       "icon": "./assets/NevisDB.ico"
