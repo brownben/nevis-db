@@ -36,7 +36,6 @@
   },
   "scripts": {
     "start": "electron . ",
-    "build": "vue-cli-service build",
     "rebuild": "electron-builder install-app-deps",
     "postinstall": "npm run rebuild",
     "dist": "build",
