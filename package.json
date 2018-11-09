@@ -1,7 +1,7 @@
 {
   "name": "nevis-db",
   "productName": "Nevis-Database",
-  "version": "1.0.0-beta",
+  "version": "1.0.0",
   "description": "Fast and Easy Results for Orienteering",
   "author": {
     "name": "Ben Brown"
@@ -52,7 +52,7 @@
     "productName": "Nevis",
     "win": {
       "target": "nsis",
-      "icon": "./assets/nevis.ico"
+      "icon": "./assets/NevisDB.ico"
     }
   }
 }
