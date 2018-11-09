@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/index.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'">
+    <title>Nevis Database</title>
+</head>
+
+<body>
+
+    <div id="titlebar">
+        <button id="close" onclick="window.close()">
+            <svg color=" white" width="10" height="10">
+                <path d="M 0,0 0,0.7 4.3,5 0,9.3 0,10 0.7,10 5,5.7 9.3,10 10,10 10,9.3 5.7,5 10,0.7 10,0 9.3,0 5,4.3 0.7,0 Z"></path>
+            </svg>
+        </button>
+    </div>
+
+    <main>
+        <h1>Nevis Database Server</h1>
+        <p>A Database Server is running on <span id="a"></span><span> :5984</span></p>
+        <p>The database is located at:</p>
+        <p><span id="b"></span></p>
+    </main>
+    <script>
+        const { ipcRenderer } = require('electron')
+        ipcRenderer.send('ready')
+        ipcRenderer.on('data', (event, port, location) => {
+            document.getElementById('a').innerText = port.split('/')[0]
+            document.getElementById('b').innerText = location
+        })
+    </script>
+</body>
+
+</html>
