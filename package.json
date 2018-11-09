@@ -1,0 +1,58 @@
+{
+  "name": "nevis-db",
+  "productName": "Nevis-Database",
+  "version": "1.0.0-beta",
+  "description": "Fast and Easy Results for Orienteering",
+  "author": {
+    "name": "Ben Brown"
+  },
+  "license": "MIT",
+  "repository": "git+https://github.com/bonalybob/nevis.git",
+  "bugs": "https://github.com/bonalybob/nevis/issues",
+  "homepage": "https://github.com/bonalybob/nevis#readme",
+  "main": "main.js",
+  "keywords": [
+    "timing",
+    "orienteering",
+    "results",
+    "sportident",
+    "database"
+  ],
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-pouchdb": "^4.1.0",
+    "pouchdb": "^7.0.0"
+  },
+  "devDependencies": {
+    "electron": "^3.0.4",
+    "electron-builder": "^20.28.4",
+    "eslint": "^5.9.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "stylus": "^0.54.5",
+    "stylus-supremacy": "^2.12.7"
+  },
+  "scripts": {
+    "start": "electron . ",
+    "build": "vue-cli-service build",
+    "rebuild": "electron-builder install-app-deps",
+    "postinstall": "npm run rebuild",
+    "dist": "build",
+    "pack": "build --dir",
+    "lint": "npm run lint-styles && npm run lint-js",
+    "lint-js": "eslint main.js --fix",
+    "lint-styles": "stylus-supremacy format ./styles/*.styl --options stylusSupremacy.json --replace",
+    "watch-styles": "stylus ./styles -w -c -m",
+    "build-styles": "stylus ./styles -c -m"
+  },
+  "build": {
+    "appId": "Nevis",
+    "productName": "Nevis",
+    "win": {
+      "target": "nsis",
+      "icon": "./assets/nevis.ico"
+    }
+  }
+}
