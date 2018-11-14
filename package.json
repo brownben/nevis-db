@@ -1,7 +1,7 @@
 {
   "name": "nevis-db",
   "productName": "Nevis-Database",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Fast and Easy Results for Orienteering",
   "author": {
     "name": "Ben Brown"
@@ -19,6 +19,7 @@
     "database"
   ],
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "express-pouchdb": "^4.1.0",
     "pouchdb": "^7.0.0"

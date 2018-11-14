@@ -2,6 +2,7 @@ const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('path')
 const PouchDB = require('pouchdb')
 const express = require('express')
+const cors = require('cors')
 const os = require('os')
 
 let win
@@ -10,6 +11,7 @@ const appDataPath = app.getPath('appData') + '\\Nevis-Database\\'
 function setup () {
   // Set up Database Server
   let expressApp = express()
+  expressApp.use(cors())
   expressApp.use('/',
     require('express-pouchdb')(
       PouchDB.defaults({
