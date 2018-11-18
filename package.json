@@ -7,9 +7,9 @@
     "name": "Ben Brown"
   },
   "license": "MIT",
-  "repository": "git+https://github.com/bonalybob/nevis.git",
-  "bugs": "https://github.com/bonalybob/nevis/issues",
-  "homepage": "https://github.com/bonalybob/nevis#readme",
+  "repository": "git+https://github.com/brownben/nevis.git",
+  "bugs": "https://github.com/brownben/nevis/issues",
+  "homepage": "https://github.com/brownben/nevis#readme",
   "main": "main.js",
   "keywords": [
     "timing",
