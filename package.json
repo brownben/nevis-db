@@ -3,13 +3,11 @@
   "productName": "Nevis-Database",
   "version": "1.1.0",
   "description": "Fast and Easy Results for Orienteering",
-  "author": {
-    "name": "Ben Brown"
-  },
+  "author": "brownben",
   "license": "MIT",
   "repository": "git+https://github.com/brownben/nevis.git",
   "bugs": "https://github.com/brownben/nevis/issues",
-  "homepage": "https://github.com/brownben/nevis#readme",
+  "homepage": "https://brownben.github.io/nevis",
   "main": "main.js",
   "keywords": [
     "timing",
@@ -25,11 +23,11 @@
     "pouchdb": "^7.0.0"
   },
   "devDependencies": {
-    "electron": "^3.0.4",
-    "electron-builder": "^20.28.4",
-    "eslint": "^5.9.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^8.0.0",
+    "electron": "^4.0.4",
+    "electron-builder": "^20.38.5",
+    "eslint": "^5.13.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-standard": "^4.0.0",
     "stylus": "^0.54.5",
